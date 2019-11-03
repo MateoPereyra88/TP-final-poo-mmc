@@ -1,10 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
-using System.Net;      //required
-using System.Net.Sockets;    //required
+using System.Net;
+using System.Net.Sockets;
 using System.Threading;
 
 namespace ServidorChat
@@ -13,68 +11,66 @@ namespace ServidorChat
     {
         private Socket listener;
         private IPEndPoint miDireccion;
-        private static List<Socket> clientes;
-
+        private static List<Usuario> clientes;
         public Servidor(string ip, int puerto)
         {
             this.listener = new Socket(AddressFamily.InterNetwork, SocketType.Stream, ProtocolType.Tcp);
-            this.miDireccion = new IPEndPoint(IPAddress.Any, puerto);
-            clientes = new List<Socket>();
+            this.miDireccion = new IPEndPoint(IPAddress.Parse(ip), puerto);
+            clientes = new List<Usuario> { };
             listener.Bind(miDireccion);
             listener.Listen(10);
-
         }
-
-
         public void AceptarConexiones()
         {
             while (true)
             {
                 try
                 {
-                    Socket nuevoCliente = listener.Accept(); //Acepto la nueva conexion
-                    Console.WriteLine("Conectado con exito");
-                    clientes.Add(nuevoCliente); //Agrego el socket a la lista de clientes
+                    Socket nuevoCliente = listener.Accept();
+                    byte[] bytes = new byte[100];
+                    int tamanio = nuevoCliente.Receive(bytes);
+                    string nombre = Encoding.ASCII.GetString(bytes, 0, tamanio);
+                    foreach (Usuario u in clientes)
+                    {
+                        u.Conexion.Send(Encoding.ASCII.GetBytes(nombre + " se ha conectado"));
+                    }
+                    Usuario nuevoUsuario = new Usuario(nuevoCliente, nombre);
+                    clientes.Add(nuevoUsuario); 
                     Thread thr = new Thread(Servidor.EscucharCliente);
-                    thr.Start(nuevoCliente);//
+                    thr.Start(nuevoUsuario);
                 }
                 catch (Exception error)
                 {
                     Console.WriteLine("Error: {0}", error.ToString());
                 }
-
             }
         }
-
         private static void EscucharCliente(object param)
         {
-            Socket cliente = ((Socket)param);
+            Usuario cliente = ((Usuario)param);
             while (true)
             {
                 try
                 {
                     byte[] b = new byte[100];
-                    cliente.Receive(b);
-                    foreach (Socket c in clientes)
+                    cliente.Conexion.Receive(b);
+                    foreach (Usuario u in clientes)
                     {
-                        if (c != cliente)
-                            c.Send(b);
+                        if (u != cliente)
+                            u.Conexion.Send(b);
                     }
-
-                    /*byte[] b = new byte[100];
-                    int k = cliente.Receive(b);
-                    string msg = Encoding.ASCII.GetString(b, 0, k);
-                    Console.WriteLine(msg);*/
                 }
                 catch (Exception error)
                 {
-                    Console.WriteLine("El cliente se ha desconectado");
                     clientes.Remove(cliente);
-                    cliente.Close();
+                    foreach (Usuario u in clientes)
+                    {
+                        u.Conexion.Send(Encoding.ASCII.GetBytes(cliente.Nick + " se ha desconectado"));
+                    }
+                    cliente.Conexion.Close();
                     break;
                 }
             }
         }
-
     }
 }
