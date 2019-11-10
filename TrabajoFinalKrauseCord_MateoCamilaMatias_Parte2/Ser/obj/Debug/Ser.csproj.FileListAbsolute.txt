@@ -1,0 +1,7 @@
+C:\Users\m4730\Desktop\TrabajoFinalKrauseCord_MateoCamilaMatias_Parte2\Ser\bin\Debug\Ser.exe.config
+C:\Users\m4730\Desktop\TrabajoFinalKrauseCord_MateoCamilaMatias_Parte2\Ser\bin\Debug\Ser.exe
+C:\Users\m4730\Desktop\TrabajoFinalKrauseCord_MateoCamilaMatias_Parte2\Ser\bin\Debug\Ser.pdb
+C:\Users\m4730\Desktop\TrabajoFinalKrauseCord_MateoCamilaMatias_Parte2\Ser\obj\Debug\Ser.csprojAssemblyReference.cache
+C:\Users\m4730\Desktop\TrabajoFinalKrauseCord_MateoCamilaMatias_Parte2\Ser\obj\Debug\Ser.csproj.CoreCompileInputs.cache
+C:\Users\m4730\Desktop\TrabajoFinalKrauseCord_MateoCamilaMatias_Parte2\Ser\obj\Debug\Ser.exe
+C:\Users\m4730\Desktop\TrabajoFinalKrauseCord_MateoCamilaMatias_Parte2\Ser\obj\Debug\Ser.pdb

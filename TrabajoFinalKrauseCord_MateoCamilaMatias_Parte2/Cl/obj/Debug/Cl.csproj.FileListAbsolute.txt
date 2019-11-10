@@ -1,0 +1,7 @@
+C:\Users\m4730\Desktop\TrabajoFinalKrauseCord_MateoCamilaMatias_Parte2\Cl\bin\Debug\Cl.exe.config
+C:\Users\m4730\Desktop\TrabajoFinalKrauseCord_MateoCamilaMatias_Parte2\Cl\bin\Debug\Cl.exe
+C:\Users\m4730\Desktop\TrabajoFinalKrauseCord_MateoCamilaMatias_Parte2\Cl\bin\Debug\Cl.pdb
+C:\Users\m4730\Desktop\TrabajoFinalKrauseCord_MateoCamilaMatias_Parte2\Cl\obj\Debug\Cl.csprojAssemblyReference.cache
+C:\Users\m4730\Desktop\TrabajoFinalKrauseCord_MateoCamilaMatias_Parte2\Cl\obj\Debug\Cl.csproj.CoreCompileInputs.cache
+C:\Users\m4730\Desktop\TrabajoFinalKrauseCord_MateoCamilaMatias_Parte2\Cl\obj\Debug\Cl.exe
+C:\Users\m4730\Desktop\TrabajoFinalKrauseCord_MateoCamilaMatias_Parte2\Cl\obj\Debug\Cl.pdb
