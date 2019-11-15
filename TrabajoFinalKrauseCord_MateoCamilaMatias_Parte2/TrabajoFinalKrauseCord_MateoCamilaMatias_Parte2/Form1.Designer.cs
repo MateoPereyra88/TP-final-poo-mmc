@@ -93,11 +93,15 @@
             // 
             // tbMensaje
             // 
+            this.tbMensaje.AllowDrop = true;
             this.tbMensaje.Location = new System.Drawing.Point(205, 247);
             this.tbMensaje.Name = "tbMensaje";
+            this.tbMensaje.ScrollBars = System.Windows.Forms.ScrollBars.Both;
             this.tbMensaje.Size = new System.Drawing.Size(242, 20);
             this.tbMensaje.TabIndex = 15;
             this.tbMensaje.Visible = false;
+            this.tbMensaje.DragDrop += new System.Windows.Forms.DragEventHandler(this.tbMensaje_DragDrop);
+            this.tbMensaje.DragEnter += new System.Windows.Forms.DragEventHandler(this.tbMensaje_DragEnter);
             // 
             // txbNick
             // 
@@ -150,6 +154,7 @@
             // 
             // Form1
             // 
+            this.AllowDrop = true;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);

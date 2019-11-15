@@ -47,7 +47,7 @@ namespace TrabajoFinalKrauseCord_MateoCamilaMatias_Parte2
             btnEnviarArch.Visible = true;
             btnDescArc.Visible = true;
 
-            cln = new Cliente("192.168.1.37", 1234, txbNick.Text);
+            cln = new Cliente("192.168.3.111", 1234, txbNick.Text);
 
             
 
@@ -146,6 +146,16 @@ namespace TrabajoFinalKrauseCord_MateoCamilaMatias_Parte2
                     
                 }
             }
+        }
+
+        private void tbMensaje_DragEnter(object sender, DragEventArgs e)
+        {
+            e.Effect = DragDropEffects.All;
+        }
+
+        private void tbMensaje_DragDrop(object sender, DragEventArgs e)
+        {
+            ruta.Text = ((string[])e.Data.GetData(DataFormats.FileDrop, false))[0];
         }
     }
 }

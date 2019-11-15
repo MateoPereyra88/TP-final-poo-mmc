@@ -10,7 +10,7 @@ namespace Ser
     {
         static void Main(string[] args)
         {
-            Servidor servidor = new Servidor("192.168.1.37", 1234);
+            Servidor servidor = new Servidor("192.168.3.111", 1234);
             servidor.AceptarConexiones();
         }
     }
