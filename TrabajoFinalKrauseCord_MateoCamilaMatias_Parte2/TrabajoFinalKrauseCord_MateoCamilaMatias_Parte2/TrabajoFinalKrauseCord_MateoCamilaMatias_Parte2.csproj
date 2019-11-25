@@ -88,6 +88,10 @@
       <Project>{2f424d32-a707-4672-83cb-62f419b9cab5}</Project>
       <Name>Ser</Name>
     </ProjectReference>
+    <ProjectReference Include="..\ValoresConstantes\ValoresConstantes.csproj">
+      <Project>{ec98cc24-0722-4375-92c2-e1e882c4c74b}</Project>
+      <Name>ValoresConstantes</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

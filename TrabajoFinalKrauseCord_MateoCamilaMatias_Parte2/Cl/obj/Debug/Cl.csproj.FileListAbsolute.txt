@@ -5,3 +5,13 @@ C:\Users\m4730\Desktop\TrabajoFinalKrauseCord_MateoCamilaMatias_Parte2\Cl\obj\De
 C:\Users\m4730\Desktop\TrabajoFinalKrauseCord_MateoCamilaMatias_Parte2\Cl\obj\Debug\Cl.csproj.CoreCompileInputs.cache
 C:\Users\m4730\Desktop\TrabajoFinalKrauseCord_MateoCamilaMatias_Parte2\Cl\obj\Debug\Cl.exe
 C:\Users\m4730\Desktop\TrabajoFinalKrauseCord_MateoCamilaMatias_Parte2\Cl\obj\Debug\Cl.pdb
+F:\TP-final-poo-mmc\TP-final-poo-mmc\TrabajoFinalKrauseCord_MateoCamilaMatias_Parte2\Cl\bin\Debug\Cl.exe.config
+F:\TP-final-poo-mmc\TP-final-poo-mmc\TrabajoFinalKrauseCord_MateoCamilaMatias_Parte2\Cl\bin\Debug\Cl.exe
+F:\TP-final-poo-mmc\TP-final-poo-mmc\TrabajoFinalKrauseCord_MateoCamilaMatias_Parte2\Cl\bin\Debug\Cl.pdb
+F:\TP-final-poo-mmc\TP-final-poo-mmc\TrabajoFinalKrauseCord_MateoCamilaMatias_Parte2\Cl\bin\Debug\ValoresConstantes.exe
+F:\TP-final-poo-mmc\TP-final-poo-mmc\TrabajoFinalKrauseCord_MateoCamilaMatias_Parte2\Cl\bin\Debug\ValoresConstantes.pdb
+F:\TP-final-poo-mmc\TP-final-poo-mmc\TrabajoFinalKrauseCord_MateoCamilaMatias_Parte2\Cl\bin\Debug\ValoresConstantes.exe.config
+F:\TP-final-poo-mmc\TP-final-poo-mmc\TrabajoFinalKrauseCord_MateoCamilaMatias_Parte2\Cl\obj\Debug\Cl.csprojAssemblyReference.cache
+F:\TP-final-poo-mmc\TP-final-poo-mmc\TrabajoFinalKrauseCord_MateoCamilaMatias_Parte2\Cl\obj\Debug\Cl.csproj.CopyComplete
+F:\TP-final-poo-mmc\TP-final-poo-mmc\TrabajoFinalKrauseCord_MateoCamilaMatias_Parte2\Cl\obj\Debug\Cl.exe
+F:\TP-final-poo-mmc\TP-final-poo-mmc\TrabajoFinalKrauseCord_MateoCamilaMatias_Parte2\Cl\obj\Debug\Cl.pdb

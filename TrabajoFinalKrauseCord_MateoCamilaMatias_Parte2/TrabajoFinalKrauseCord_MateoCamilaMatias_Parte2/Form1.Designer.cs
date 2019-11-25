@@ -29,8 +29,8 @@
         private void InitializeComponent()
         {
             this.adj = new System.Windows.Forms.Button();
-            this.registrar = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
+            this.btnRegistrar = new System.Windows.Forms.Button();
+            this.lblUsuario = new System.Windows.Forms.Label();
             this.lbListaMensajes = new System.Windows.Forms.ListBox();
             this.Enviar = new System.Windows.Forms.Button();
             this.tbMensaje = new System.Windows.Forms.TextBox();
@@ -38,7 +38,10 @@
             this.lbNick = new System.Windows.Forms.Label();
             this.ruta = new System.Windows.Forms.Label();
             this.btnEnviarArch = new System.Windows.Forms.Button();
-            this.btnDescArc = new System.Windows.Forms.Button();
+            this.txbPass = new System.Windows.Forms.TextBox();
+            this.lblNombreReg = new System.Windows.Forms.Label();
+            this.lblContrasenia = new System.Windows.Forms.Label();
+            this.btnLogin = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // adj
@@ -52,24 +55,24 @@
             this.adj.Visible = false;
             this.adj.Click += new System.EventHandler(this.adj_Click);
             // 
-            // registrar
+            // btnRegistrar
             // 
-            this.registrar.Location = new System.Drawing.Point(287, 145);
-            this.registrar.Name = "registrar";
-            this.registrar.Size = new System.Drawing.Size(75, 23);
-            this.registrar.TabIndex = 13;
-            this.registrar.Text = "Conectar";
-            this.registrar.UseVisualStyleBackColor = true;
-            this.registrar.Click += new System.EventHandler(this.registrar_Click);
+            this.btnRegistrar.Location = new System.Drawing.Point(397, 185);
+            this.btnRegistrar.Name = "btnRegistrar";
+            this.btnRegistrar.Size = new System.Drawing.Size(75, 23);
+            this.btnRegistrar.TabIndex = 13;
+            this.btnRegistrar.Text = "Registrarse";
+            this.btnRegistrar.UseVisualStyleBackColor = true;
+            this.btnRegistrar.Click += new System.EventHandler(this.registrar_Click);
             // 
-            // label1
+            // lblUsuario
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(284, 87);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(43, 13);
-            this.label1.TabIndex = 11;
-            this.label1.Text = "Usuario";
+            this.lblUsuario.AutoSize = true;
+            this.lblUsuario.Location = new System.Drawing.Point(274, 83);
+            this.lblUsuario.Name = "lblUsuario";
+            this.lblUsuario.Size = new System.Drawing.Size(43, 13);
+            this.lblUsuario.TabIndex = 11;
+            this.lblUsuario.Text = "Usuario";
             // 
             // lbListaMensajes
             // 
@@ -79,6 +82,7 @@
             this.lbListaMensajes.Size = new System.Drawing.Size(327, 212);
             this.lbListaMensajes.TabIndex = 10;
             this.lbListaMensajes.Visible = false;
+            this.lbListaMensajes.Click += new System.EventHandler(this.LbListaMensajes_Click);
             // 
             // Enviar
             // 
@@ -105,9 +109,9 @@
             // 
             // txbNick
             // 
-            this.txbNick.Location = new System.Drawing.Point(287, 119);
+            this.txbNick.Location = new System.Drawing.Point(350, 119);
             this.txbNick.Name = "txbNick";
-            this.txbNick.Size = new System.Drawing.Size(185, 20);
+            this.txbNick.Size = new System.Drawing.Size(122, 20);
             this.txbNick.TabIndex = 16;
             // 
             // lbNick
@@ -132,7 +136,7 @@
             // 
             // btnEnviarArch
             // 
-            this.btnEnviarArch.Location = new System.Drawing.Point(287, 318);
+            this.btnEnviarArch.Location = new System.Drawing.Point(288, 318);
             this.btnEnviarArch.Name = "btnEnviarArch";
             this.btnEnviarArch.Size = new System.Drawing.Size(103, 23);
             this.btnEnviarArch.TabIndex = 19;
@@ -141,16 +145,40 @@
             this.btnEnviarArch.Visible = false;
             this.btnEnviarArch.Click += new System.EventHandler(this.BtnEnviarArch_Click);
             // 
-            // btnDescArc
+            // txbPass
             // 
-            this.btnDescArc.Location = new System.Drawing.Point(97, 211);
-            this.btnDescArc.Name = "btnDescArc";
-            this.btnDescArc.Size = new System.Drawing.Size(69, 23);
-            this.btnDescArc.TabIndex = 20;
-            this.btnDescArc.Text = "Descargar";
-            this.btnDescArc.UseVisualStyleBackColor = true;
-            this.btnDescArc.Visible = false;
-            this.btnDescArc.Click += new System.EventHandler(this.BtnDescArc_Click);
+            this.txbPass.Location = new System.Drawing.Point(350, 145);
+            this.txbPass.Name = "txbPass";
+            this.txbPass.Size = new System.Drawing.Size(122, 20);
+            this.txbPass.TabIndex = 20;
+            // 
+            // lblNombreReg
+            // 
+            this.lblNombreReg.AutoSize = true;
+            this.lblNombreReg.Location = new System.Drawing.Point(273, 119);
+            this.lblNombreReg.Name = "lblNombreReg";
+            this.lblNombreReg.Size = new System.Drawing.Size(47, 13);
+            this.lblNombreReg.TabIndex = 21;
+            this.lblNombreReg.Text = "Nombre:";
+            // 
+            // lblContrasenia
+            // 
+            this.lblContrasenia.AutoSize = true;
+            this.lblContrasenia.Location = new System.Drawing.Point(274, 148);
+            this.lblContrasenia.Name = "lblContrasenia";
+            this.lblContrasenia.Size = new System.Drawing.Size(64, 13);
+            this.lblContrasenia.TabIndex = 22;
+            this.lblContrasenia.Text = "Contraseña:";
+            // 
+            // btnLogin
+            // 
+            this.btnLogin.Location = new System.Drawing.Point(249, 185);
+            this.btnLogin.Name = "btnLogin";
+            this.btnLogin.Size = new System.Drawing.Size(102, 23);
+            this.btnLogin.TabIndex = 23;
+            this.btnLogin.Text = "Iniciar sesión";
+            this.btnLogin.UseVisualStyleBackColor = true;
+            this.btnLogin.Click += new System.EventHandler(this.btnLogin_Click);
             // 
             // Form1
             // 
@@ -158,15 +186,18 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.btnDescArc);
+            this.Controls.Add(this.btnLogin);
+            this.Controls.Add(this.lblContrasenia);
+            this.Controls.Add(this.lblNombreReg);
+            this.Controls.Add(this.txbPass);
             this.Controls.Add(this.btnEnviarArch);
             this.Controls.Add(this.ruta);
             this.Controls.Add(this.lbNick);
             this.Controls.Add(this.txbNick);
             this.Controls.Add(this.tbMensaje);
             this.Controls.Add(this.adj);
-            this.Controls.Add(this.registrar);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.btnRegistrar);
+            this.Controls.Add(this.lblUsuario);
             this.Controls.Add(this.lbListaMensajes);
             this.Controls.Add(this.Enviar);
             this.Name = "Form1";
@@ -179,8 +210,8 @@
         #endregion
 
         private System.Windows.Forms.Button adj;
-        private System.Windows.Forms.Button registrar;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button btnRegistrar;
+        private System.Windows.Forms.Label lblUsuario;
         private System.Windows.Forms.ListBox lbListaMensajes;
         private System.Windows.Forms.Button Enviar;
         private System.Windows.Forms.TextBox tbMensaje;
@@ -188,7 +219,10 @@
         private System.Windows.Forms.Label lbNick;
         private System.Windows.Forms.Label ruta;
         private System.Windows.Forms.Button btnEnviarArch;
-        private System.Windows.Forms.Button btnDescArc;
+        private System.Windows.Forms.TextBox txbPass;
+        private System.Windows.Forms.Label lblNombreReg;
+        private System.Windows.Forms.Label lblContrasenia;
+        private System.Windows.Forms.Button btnLogin;
     }
 }
 

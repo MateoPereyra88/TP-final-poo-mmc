@@ -1,0 +1,6 @@
+F:\TP-final-poo-mmc\TP-final-poo-mmc\TrabajoFinalKrauseCord_MateoCamilaMatias_Parte2\ValoresConstantes\bin\Debug\ValoresConstantes.exe.config
+F:\TP-final-poo-mmc\TP-final-poo-mmc\TrabajoFinalKrauseCord_MateoCamilaMatias_Parte2\ValoresConstantes\bin\Debug\ValoresConstantes.exe
+F:\TP-final-poo-mmc\TP-final-poo-mmc\TrabajoFinalKrauseCord_MateoCamilaMatias_Parte2\ValoresConstantes\bin\Debug\ValoresConstantes.pdb
+F:\TP-final-poo-mmc\TP-final-poo-mmc\TrabajoFinalKrauseCord_MateoCamilaMatias_Parte2\ValoresConstantes\obj\Debug\ValoresConstantes.csprojAssemblyReference.cache
+F:\TP-final-poo-mmc\TP-final-poo-mmc\TrabajoFinalKrauseCord_MateoCamilaMatias_Parte2\ValoresConstantes\obj\Debug\ValoresConstantes.exe
+F:\TP-final-poo-mmc\TP-final-poo-mmc\TrabajoFinalKrauseCord_MateoCamilaMatias_Parte2\ValoresConstantes\obj\Debug\ValoresConstantes.pdb

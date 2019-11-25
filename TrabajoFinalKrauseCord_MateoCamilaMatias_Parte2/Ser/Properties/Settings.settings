@@ -1,5 +1,5 @@
 ﻿<?xml version='1.0' encoding='utf-8'?>
-<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="TrabajoFinalKrauseCord_MateoCamilaMatias_Parte2.Properties" GeneratedClassName="Settings">
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="Ser.Properties" GeneratedClassName="Settings">
   <Profiles />
   <Settings>
     <Setting Name="Valor" Type="(Connection string)" Scope="Application">
